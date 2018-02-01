@@ -1,0 +1,38 @@
+﻿<Window x:Class="Drawing.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Drawing"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Canvas>
+        <Line X1="1" Y1="20" X2="80" Y2="80" StrokeThickness="6" StrokeDashArray="1" Stroke="Red" StrokeEndLineCap="Triangle" Canvas.Left="380" Canvas.Top="183"/>
+        <Polyline Points="20 20 35 60 18 4 2 15" Stroke="Green" StrokeDashArray="1" StrokeEndLineCap="Triangle" StrokeThickness="6" Canvas.Left="-163" Canvas.Top="-336" >
+            <Polyline.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="0.68004479071703261" ScaleX="3.9162218679968359"/>
+                    <SkewTransform AngleX="80"/>
+                    <RotateTransform Angle="-1048.835"/>
+                    <TranslateTransform X="340.6919557412736" Y="321.38391148254721"/>
+                </TransformGroup>
+            </Polyline.RenderTransform>
+        </Polyline>
+        <Rectangle Width="100" Height="150" Stroke="Coral" StrokeDashArray="1" Fill="Gray" StrokeThickness="6" Canvas.Left="230" Canvas.Top="145"/>
+        <Polygon Points="20 20 35 60 18 4 2 15" Stroke="Green" StrokeDashArray="1" StrokeEndLineCap="Triangle" StrokeThickness="6" Canvas.Left="44" Canvas.Top="206"/>
+        <Ellipse Name="Ellipse" Width="50" Height="50" Stroke="DarkBlue"  StrokeDashArray="1" StrokeEndLineCap="Triangle" StrokeThickness="6" Canvas.Left="380" Canvas.Top="245" Fill="BlanchedAlmond"/>
+        <Path Fill="YellowGreen" Canvas.Left="69.891" Canvas.Top="66">
+            <Path.Data>
+                <CombinedGeometry GeometryCombineMode="Union">
+                    <CombinedGeometry.Geometry1>
+                        <RectangleGeometry Rect="20 20 120 120"/>
+                    </CombinedGeometry.Geometry1>
+                    <CombinedGeometry.Geometry2>
+                        <EllipseGeometry RadiusX="50" RadiusY="70" />
+                    </CombinedGeometry.Geometry2>
+                </CombinedGeometry>
+            </Path.Data>
+        </Path>
+    </Canvas>
+
+</Window>
